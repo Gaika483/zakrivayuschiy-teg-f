@@ -198,12 +198,6 @@ button {
   overflow: clip;
 }
 
-.card__img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 .card__label {
   position: absolute;
   top: 25px;
