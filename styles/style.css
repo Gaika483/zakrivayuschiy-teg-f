@@ -24,7 +24,7 @@
       transparent 0px 2px,
       var(--gradient-color) 2px 4px
     ),
-    linear-gradient(var(--gradient-color2), var(--gradient-color3));
+    linear-gradient(var(--gradient-color-white), var(--gradient-color-black));
   background-size: cover;
   background-attachment: fixed;
   min-inline-size: 320px;
@@ -46,7 +46,7 @@
       transparent 0px 2px,
       var(--gradient-color) 2px 4px
     ),
-    linear-gradient(var(--gradient-color2), var(--gradient-color3));
+    linear-gradient(var(--gradient-color-white), var(--gradient-color-black));
   background-size: cover;
   background-attachment: fixed;
   font-variation-settings: "wght" var(--regular-wight);
@@ -181,7 +181,7 @@ button {
 }
 
 .card__icon-button:focus-visible {
-  border: 2px solid var(--main-color);
+  outline: 2px solid var(--main-color);
   transition: border 0.3s ease;
 }
 
@@ -249,23 +249,20 @@ button {
   filter: saturate(400%);
 }
 
-.footer {
-  padding-top: 51px;
-  padding-bottom: 102px;
-}
-
 .icon {
   width: 28px;
   height: 28px;
 }
 
-.footer-button-section {
+.save-button-section {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 51px;
+  padding-bottom: 102px;
 }
 
-.footer-button {
+.save-button {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -280,11 +277,11 @@ button {
   white-space: nowrap;
 }
 
-.footer-button:focus {
+.save-button:focus {
   outline: none;
 }
 
-.footer-button:focus-visible {
+.save-button:focus-visible {
   box-shadow: 2px 2px 0px 0px var(--main-color);
 }
 
@@ -304,6 +301,7 @@ button {
 }
 
 .dialog__icon {
+  flex-shrink: 0;
   width: 39px;
   height: 39px;
 }
@@ -352,6 +350,7 @@ button {
   .header__title {
     margin-top: 136px;
   }
+
   .card-menu__list {
     gap: 51px;
   }
@@ -379,7 +378,15 @@ button {
 }
 
 @media (width < 768px) {
-  .footer-button {
+  .header__logo {
+    margin-top: 120px;
+  }
+
+  .header__name {
+    margin-bottom: 120px;
+  }
+
+  .save-button {
     flex-wrap: wrap;
   }
 }

@@ -6,9 +6,10 @@
   --bold-wight: 700;
   --bg-color: #fff;
   --main-color: #000;
-  --accent-color: #ff0000;
+  --accent-color: #000;
+  --heart-filling-color: red;
   --gradient-color: #d3d3d3;
-  --gradient-color2: #e7e7e7;
-  --gradient-color3: #1a1a1a;
+  --gradient-color-white: #e7e7e7;
+  --gradient-color-black: #1a1a1a;
   --blend-content-color: var(--bg-color);
 }
