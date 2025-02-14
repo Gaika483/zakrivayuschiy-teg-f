@@ -62,11 +62,6 @@
   transition-delay: 0s;
 }
 
-.like-icon.is-liked .sparks {
-  fill: var(--heart-filling-color);
-  transition-delay: 0.05s;
-}
-
 .like-icon.is-liked .main-body {
   fill: var(--heart-filling-color);
   transition-delay: 0.05s;
@@ -82,13 +77,13 @@
   transition-delay: 0s;
 }
 
-
 .like-icon.is-liked .heart {
   transform-origin: center;
   animation: heart-scale 0.3s ease-in 0.1s 1 alternate;
 }
 
 .like-icon.is-liked .sparks {
+  fill: var(--heart-filling-color);
   animation: like-icon-sparks 0.3s 0.3s ease-in;
 }
 
