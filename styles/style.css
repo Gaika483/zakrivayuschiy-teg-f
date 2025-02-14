@@ -164,7 +164,7 @@ button {
   max-block-size: 38px;
 }
 
-.card__like-button:focus {
+button:focus {
   outline: none;
 }
 
@@ -174,10 +174,6 @@ button {
 
 .card__icon-button {
   max-block-size: 38px;
-}
-
-.card__icon-button:focus {
-  outline: none;
 }
 
 .card__icon-button:focus-visible {
@@ -277,8 +273,10 @@ button {
   white-space: nowrap;
 }
 
-.save-button:focus {
-  outline: none;
+.floppy {
+  flex-shrink: 0;
+  fill: #fff;
+  mix-blend-mode: difference;
 }
 
 .save-button:focus-visible {
@@ -310,6 +308,7 @@ button {
   display: flex;
   gap: 20px;
   margin-left: 25px;
+  align-items: center;
 }
 
 .dialog__text {
@@ -388,5 +387,10 @@ button {
 
   .save-button {
     flex-wrap: wrap;
+  }
+
+  .floppy-mobile {
+    width: 28px;
+    height: 28px;
   }
 }
